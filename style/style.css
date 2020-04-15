@@ -1,0 +1,30 @@
+body {
+  top: 70px;
+  position: relative;
+}
+
+nav .nav-link {
+  color: #052528;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: letter-spacing 1s;
+  transition: letter-spacing 1s;
+}
+
+nav .nav-link:hover {
+  text-decoration: none;
+  color: #052528;
+  letter-spacing: 3px;
+}
+
+nav .nav-link.active {
+  letter-spacing: 3px;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

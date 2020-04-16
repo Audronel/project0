@@ -1,7 +1,14 @@
-$dark: #052528;
+$dark: #303941;
+$pink:#FBB3A2; 
+$blue: #7198A0;
+@mixin icons{
+    float: right;
+    font-family: "Material Icons";
+}
 
 body {
     top:70px;
+    bottom: 70px;
     position: relative;
     font-family: 'Poppins', sans-serif;
 }
@@ -17,9 +24,40 @@ h3 {
 p {
     text-align: justify;
 }
+.list {
+    border-width: 10px;
+    border-style: solid;
+    padding: 50px;
+}
+.man-list{
+    @extend .list;
+    border-color:$blue;
+    
+}
+.woman-list{
+    @extend .list;
+    border-color: $pink;
+}
 
+.collapse-but {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    cursor: pointer;
+    &:after {
+        @include icons();
+        content: "\e316";
+      
+    }
+    &.collapsed {
+        &:after {
+            @include icons();
+            content: "\e313";
+        }
+    }
+}
 nav {
-    .nav-link {
+    background-color: pink;
+        .nav-link {
         width: fit-content;
         float: right;
         position: relative;
@@ -36,7 +74,7 @@ nav {
         &.active {
             letter-spacing: 3px;
             &:after {
-                border-bottom: 2px solid $dark;
+                border-bottom: 2px solid white;
                 content: "";
                 position: absolute;
                 margin-top: -1px;
@@ -50,19 +88,23 @@ nav {
     }
 }
 
+
 @media(max-width:767px){
     body {
-        top: 10px;
-        
+        top: 0px; 
     }
     .nav {
         text-align:center;
+        padding: 30px 0;
     }
     .nav-item {
         margin: 0 auto;
     }
     .text-xs-center {
         text-align: center;
+    }
+    .content {
+        padding-top:30px;
     }
 
 }

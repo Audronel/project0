@@ -4,39 +4,43 @@
         <title>My Webpage</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
     </head>
     <body>
         <div class="container">
+            <div id="top"></div>
             <div class="row">
-                <nav class="col-md-3">
-                    <ul class="nav flex-column text-md-right text-sm-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">
-                                History
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="movies.html">
-                                Movies
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="stars.html">
-                                Pro skaters
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tricks.html">
-                                Tricks
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="col-md-3">
+                    <nav>
+                        <ul class="nav flex-column text-md-right text-sm-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">
+                                    History
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="movies.html">
+                                    Movies
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="stars.html">
+                                    Pro skaters
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tricks.html">
+                                    Tricks
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="col-md-9">
-                    <img src="cover.jpg" width="100%"/>
-                    <h1 >History of Skateboarding</h1>
+                    <img src="cover.jpg" alt="Ellen O'Neal skateboarding" width="100%"/>
+                    <h1 class="pt-2 pb-2">History of Skateboarding</h1>
                     <p>
                         Skateboarding first showed up in California in the 1950s, when surfers got the idea of trying to surf the streets. No one really knows who made the first board—it seems that several people came up with similar ideas at the same time. Several people have claimed to have invented the skateboard first, but nothing can be proved, and skateboarding remains a strange spontaneous creation.
                     </p>
@@ -88,7 +92,11 @@
                         The sport of skateboarding will make its olympic debut at the 2020 Tokyo Olympic Games, with both men's and women's events. Competition will take place in two disciplines: street and park.
                     </p>
                 </div>
+                <div class="col-sm-12 text-sm-center text-md-right text-xs-center pt-5 pb-5">
+                    <a href="#top"><img src="back.png" alt="arrow up" width="40px" height="auto" /></a> 
+                </div>
             </div>
+
         </div>
     </body>
 </html>

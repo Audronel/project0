@@ -3,6 +3,19 @@ $dark: #052528;
 body {
     top:70px;
     position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+#top {
+    position: absolute;
+    width: 100%;
+    top:-70px;
+}
+
+h3 {
+    font-weight: 400;
+}
+p {
+    text-align: justify;
 }
 
 nav {
@@ -12,7 +25,7 @@ nav {
         position: relative;
         color: $dark;
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 500;
         text-transform: uppercase;
         transition: letter-spacing 1s;
         &:hover {
@@ -36,10 +49,22 @@ nav {
         }     
     }
 }
+
 @media(max-width:767px){
+    body {
+        top: 10px;
+        
+    }
     .nav {
         text-align:center;
     }
+    .nav-item {
+        margin: 0 auto;
+    }
+    .text-xs-center {
+        text-align: center;
+    }
+
 }
 @keyframes line {
     0%   { width : 0; }

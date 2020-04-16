@@ -1,12 +1,32 @@
 body {
   top: 70px;
   position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+#top {
+  position: absolute;
+  width: 100%;
+  top: -70px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+p {
+  text-align: justify;
 }
 
 nav .nav-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+  position: relative;
   color: #052528;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   -webkit-transition: letter-spacing 1s;
   transition: letter-spacing 1s;
@@ -22,9 +42,50 @@ nav .nav-link.active {
   letter-spacing: 3px;
 }
 
+nav .nav-link.active:after {
+  border-bottom: 2px solid #052528;
+  content: "";
+  position: absolute;
+  margin-top: -1px;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-animation-name: line;
+          animation-name: line;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 @media (max-width: 767px) {
+  body {
+    top: 10px;
+  }
   .nav {
     text-align: center;
+  }
+  .nav-item {
+    margin: 0 auto;
+  }
+  .text-xs-center {
+    text-align: center;
+  }
+}
+
+@-webkit-keyframes line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

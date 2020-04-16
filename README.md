@@ -1,15 +1,15 @@
-# Project 0
+# Project 0<br/>
 
-Small informational website about skateboading
+Small informational website about skateboading<br/>
 
-HTML5, Sass, Bootstrap 4.
+HTML5, Sass, Bootstrap 4.<br/>
 
-HTML files: 
-index.html // history of skateboarding
-movies.html // table of the most popular skateboarding movies
-stars.html // 2 lists of woman and man skateboarders.
-tricks.html // information about types of the tricks dipslayed as accordion.(Bootstrap 4 component)
-style.scss // stylesheet of web.
-style.css // compiled style.scss to CSS
-back.png // arrow image.
+HTML files: <br/>
+index.html // history of skateboarding<br/>
+movies.html // table of the most popular skateboarding movies<br/>
+stars.html // 2 lists of woman and man skateboarders.<br/>
+tricks.html // information about types of the tricks dipslayed as accordion.(Bootstrap 4 component)<br/>
+style.scss // stylesheet of web.<br/>
+style.css // compiled style.scss to CSS<br/>
+back.png // arrow image.<br/>
 cover.jpg // cover image of index page.
